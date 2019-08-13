@@ -29,11 +29,11 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 
 >第一次打开TurboPlotter时，界面会提示是否已有Plot文件。对于第一次使用并P盘的用户，请选择No。
 
-![img2.png](http://note.youdao.com/yws/res/6502/WEBRESOURCE8fc39a2786159780012e9885a56e53d8)
+![img2.png](https://github.com/lavafy/testnet/blob/master/imgs/img2.png)
 
 >在进行P盘前，软件会要求用户填写“address”或“account ID”，此处实际是指您的==Plot ID==。请正确填写您准备好的Lava Plot ID；如果没有准备，请跳转后一步骤准备Plot ID。
 
-![img3.png](http://note.youdao.com/yws/res/6505/WEBRESOURCE8919e14c0fb147b49c6be44ec1aca188)
+![img3.png](https://github.com/lavafy/testnet/blob/master/imgs/img3.png)
 
 
 
@@ -47,7 +47,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 ```
 .\lava-cli.exe –testnet=1 -rpcuser=test -rpcpasword=test -getmineraddress
 ```
-![img4.png](http://note.youdao.com/yws/res/6508/WEBRESOURCEa23b38fdf455547b98ef008df7a4f336)
+![img4.png](https://github.com/lavafy/testnet/blob/master/imgs/img4.png)
 
 >Lava-cli 会返回 ==address== 和 ==plot id== 两个数据。Address就是用于挖矿并接受出块奖励的地址，Plot ID为对应此地址的Plot ID。
 
@@ -56,7 +56,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 
 >在上文步骤二提及的界面中输入Plot ID后，就可以进入P盘主界面。
 
-![img5.png](http://note.youdao.com/yws/res/6516/WEBRESOURCEe97f5cd0b2ce0750084fc8d67af2858d)
+![img5.png](https://github.com/lavafy/testnet/blob/master/imgs/img5.png)
 
 
 ##### Processor选项:
@@ -72,7 +72,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 ##### Start nonce选项：
 >默认从0开始，如无特殊要求可直接选择自动模式（automatic）。Choose from file 表示继续P上次暂停的文件。
 
-![img6.png](http://note.youdao.com/yws/res/6524/WEBRESOURCE386c9064544dd2b31ed3fd0272aed082)
+![img6.png](https://github.com/lavafy/testnet/blob/master/imgs/img6.png)
 
 ##### Max file size选项：
 >定义您想要生成的单个Plot文件的体积；默认情况下软件会根据目标盘的可用剩余空间自适配。但我们建议不要超过1T，以防因P盘意外中断导致重新P盘耗时过多。
@@ -85,14 +85,14 @@ RAM to use选项：显示可用于P盘的系统内存。
 
 #### 步骤五、开始P盘
 
-![img7.png](http://note.youdao.com/yws/res/6543/WEBRESOURCE269331c1a4a5b4d8e47e086f9e38abf9)
+![img7.png](https://github.com/lavafy/testnet/blob/master/imgs/img7.png)
 
 
 >完成以上设定后，点击Start plotting就可以开始P盘了。
 
 >P盘中途如想暂停P盘，可点击pause（暂停）按钮 ==（警告：P盘程序可以暂停，但是不能退出。如果退出程序再进入，只能重新开始P盘。一般情况下，我们建议不要随意中断P盘进程。==）
 
-![img8.png](http://note.youdao.com/yws/res/6536/WEBRESOURCEac78bb2545e0f32e478643dc520962e6)
+![img8.png](https://github.com/lavafy/testnet/blob/master/imgs/img8.png)
 
 
 >开始P盘后，程序显示以上界面，展示计算nonce和写入硬盘的速度，以及预计的剩余时间。
