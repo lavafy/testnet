@@ -1,116 +1,107 @@
-# P盘+挖矿教程完整总结版
+# Lava Plotting & Mining Instruction
 
-### 概念介绍
+### Basics
 
->“P盘”是Plotting的俗称，指生成Plot文件并填入硬盘的过程。Plot文件是PoC挖矿所必须的基础数据，矿工的硬盘空余容量越大，即可填入更多Plot文件，增加成功出块的概率。如果您想参与Lava挖矿，必须在挖矿前预先完成P盘工作。
+>Plotting stands for the process where Plot files are produced and filled into disks. Plot files are fundamental data arrays that are stored in disks statically and fetched during the PoC mining. The more storage capacity you possess, the more Plot files you can fill into the disk, and finally the more chance to produce a block. It is necessary to prepare Plot files before you start mining Lava!
 
-#### 步骤一：下载P盘软件
+#### Step 1：Download Plotting Softwares
 
-我们推荐下载免费P盘软件TurboPlotter的最新版本，下载地址：[https://blackpawn.com/tp/](https://blackpawn.com/tp/)
+We recommand a free plotting software --TurboPlotter from [https://blackpawn.com/tp/](https://blackpawn.com/tp/)
 
-该软件的免费版仅支持同时P一块盘；
+The basic version (which is totally free) supports only single plotting process at one time.
 
-付费版本（PRO版本以及UNLIMITED版本）则可以支持同时P更多盘，具体性能请参考blackpawn官网说明（以下为截图，仅供参考）。
+The Pro version and Unlimited version support multiple processes，for details please go to the official website  [https://blackpawn.com/tp/](https://blackpawn.com/tp/) . 
 
-用户请根据个人需求选择并下载。
-
-![img1.png](https://github.com/lavafy/testnet/blob/master/imgs/img1.png)
-
-
-##### *下载链接参考*：
-
-PRO版：[https://www.kuangjiwan.com/goods-58.html](https://www.kuangjiwan.com/goods-58.html)
-
-UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan.com/goods-60.html)
+Please download the software accroding to mines's demand.
 
 
 
-#### 步骤二、启动P盘软件
+#### Step 2: Pre-settings
 
-第一次打开TurboPlotter时，界面会提示是否已有Plot文件。对于第一次使用并P盘的用户，请选择No。
+The enter page will ask if you already have existing Plot files; For new user, please click "No".
 
 ![img2.png](https://github.com/lavafy/testnet/blob/master/imgs/img2.png)
 
-在进行P盘前，软件会要求用户填写“address”或“account ID”，此处实际是指您的`Plot ID`。请正确填写您准备好的Lava Plot ID；如果没有准备，请跳转后一步骤准备Plot ID。
+In the next page, you will be required to enter "address" or "Account ID", which is actually your Lava Plot ID. If you don't have one, please go to the next step.
 
 ![img3.png](https://github.com/lavafy/testnet/blob/master/imgs/img3.png)
 
 
 
-#### 步骤三、生成Plot ID
+#### Step 3: Get a new Lava Plot ID
 
-用户可以在全节点钱包内自行生成Plot ID。
+You can get a new Lava Plot ID on your own in Lava Core (Lava full node wallet)
 
-欲获取Lava全节点钱包，请前往Lava官网([www.lavatech.org](www.lavatech.org))顶部的下载栏目选择适用的环境版本进行下载。
+Please go to Lava official website ([www.lavatech.org](www.lavatech.org)) -> Download-> Full Node Wallet and choose your platform version.
 
-运行全节点钱包（请先确认lavad成功同步到区块链），输入命令: 
+Run lava-cli.exe in Powershell (please ganrantee that lavad.exe server is updated to the latest blocks), and type in command:
 ```
 .\lava-cli.exe –testnet=1 -rpcuser=test -rpcpasword=test -getmineraddress
 ```
 ![img4.png](https://github.com/lavafy/testnet/blob/master/imgs/img4.png)
 
-Lava-cli 会返回 `address`和 `plot id`两个数据。Address就是用于挖矿并接受出块奖励的地址，Plot ID为对应此地址的Plot ID。
+lava-cli will return an `address` and `plot id`. `address` stands for the Lava address that being used to mine Lava and receive corresponding block rewards; `plot id` stands for the Plot ID related with the mining address.
 
 
-#### 步骤四、P盘参数设定
+#### Step 4: Plotting Settings
 
-在上文步骤二提及的界面中输入Plot ID后，就可以进入P盘主界面。
+Enter the page for Plotting settings:
 
 ![img5.png](https://github.com/lavafy/testnet/blob/master/imgs/img5.png)
 
 
-`Processor`选项: 请选择使用CPU或GPU进行P盘。我们推荐使用性能优秀的GPU进行P盘，可大幅提升P盘效率。
+`Processor`: Choose CPU or GPU to process plotting tasks. We suggest suing a decent GPU because this would evidently enhance the plotting process.
 
-`SSD path`选项: 仅适用于SSD（固态硬盘）的情况，如果您使用固态硬盘存放Plot文件，则在此选项下填写存放路径，否则不需理会。
+`SSD path`: Only available for SSD disks. If you use SSD to store Plot files, please define a file path here.
 
-`Target disk path`选项: 对于非SSD的情况，请在此填写P盘的目标路径（即存放Plot文件的位置）。对于免费版，软件仅支持单个路径。
+`Target disk path`: For HDD disks (not SSD), please define a file path here. Notice: the free version does not support multiple paths.
 
-`Start nonce`选项： 默认从0开始，如无特殊要求可直接选择自动模式（automatic）。Choose from file 表示继续P上次暂停的文件。
+`Start nonce`: default start from '0'. Please set to automatic mode for normal usage. 
 
 ![img6.png](https://github.com/lavafy/testnet/blob/master/imgs/img6.png)
 
-`Max file size`选项：定义您想要生成的单个Plot文件的体积；默认情况下软件会根据目标盘的可用剩余空间自适配。但我们建议不要超过1T，以防因P盘意外中断导致重新P盘耗时过多。
+`Max file size`: Define the maximum size for a single Plot file (default: max size will fit into your disk size). We suggest an max size no more than 1 TB, because it takes too long to re-plot a file in contigencies.
 
-`RAM to use`选项：显示可用于P盘的系统内存。
+`RAM to use`: indicates the system RAM available for the plotting process.
 
 
 
-#### 步骤五、开始P盘
+#### Step 5: Start Plotting!
 
 ![img7.png](https://github.com/lavafy/testnet/blob/master/imgs/img7.png)
 
 
-完成以上设定后，点击Start plotting就可以开始P盘了。
+After all the parameters are properly set, you can start plotting.
 
-P盘中途如想暂停P盘，可点击pause（暂停）按钮 `（警告：P盘程序可以暂停，但是不能退出。如果退出程序再进入，只能重新开始P盘。一般情况下，我们建议不要随意中断P盘进程。）`
+If you want to pause the plotting process, please click the "Pause" button. Warning: the plotting process can only be continued from "Pause", which means if you quit the process you have to start plotting from the beginning. Anyway, we do not recommand pausing, hanging, or stopping the plotting process. 
 
 ![img8.png](https://github.com/lavafy/testnet/blob/master/imgs/img8.png)
 
 
-开始P盘后，程序显示以上界面，展示计算nonce和写入硬盘的速度，以及预计的剩余时间。
+When the Plotter is running, a monitor page will occur. Calculating speed, write speed and an estimated remaining time will be displayed in this page. 
 
 
-#### 完成P盘、开始挖矿
+#### Start Mining!
 
-请下载挖矿软件（Lava Miner） ，可前往Lava官网([www.lavatech.org](www.lavatech.org))顶部的下载栏目 -> Miner 进行最新版本的下载。
+Please go to the Lava official website ([www.lavatech.org](www.lavatech.org)) -> Download -> Lava Miner to download the latest mining software.
 
-完成下载后，按照如下配置设置`miner.conf`文件：
+Please set the configuration file `miner.conf` before mining.
 
 ```
 { "Mode" :  "pool",
-"Server" : 目标服务器地址，如"127.0.0.1", 钱包节点在哪，就输入哪
+"Server" : your full node server, if local: "127.0.0.1"
 "Port": 18332, 
-"OwnerAddr" : 矿 工 lava 地 址 ，
+"OwnerAddr" : your mining address ，
 "HttpAccount" : "test",
 "HttpPassWord" : "test",
 "AccountKey" : "sss",
-"UpdaterAddr" : 目标服务器地址，如"127.0.0.1", 钱包节点在哪，就输入哪
+"UpdaterAddr" : your full node server, if local: "127.0.0.1"
 "UpdaterPort": “18332”, 
 "InfoAddr" : "100pb.online",
 "InfoPort": "8124", 
 "EnableProxy": false, 
 "ProxyPort": 8126, 
-"Paths": P 盘的盘符数组，形如：["E:\\","C:\\"], 
+"Paths": Path where you store your plot files, like：["E:\\","C:\\"], 
 "CacheSize" : 16384, 
 "CacheSize2" : 262144, 
 "Debug": true, 
@@ -121,19 +112,19 @@ P盘中途如想暂停P盘，可点击pause（暂停）按钮 `（警告：P盘�
 "UseLog" : true, 
 "ShowWinner" : false, 
 "UseBoost" : false, 
-"MinerName": "sun", （单台矿机的识别名字） 
+"MinerName": "sun", Name of the mining machine 
 "WinSizeX": 76, 
 "WinSizeY": 60 }
 ```
 
-##### 其他注意事项：
-1. 测试网rpc端口18332；
-2. 配置文件必须配置以下字段：
+##### Notice:
+1. the RPC port for Lava Testnet is: 18332;
+2. Necessary fields in the configuration file：
 
 ```
 ("Server" ,"Port","OwnerAddr" ,"HttpAccount" ,"HttpPassWord" ,"UpdaterAddr" ,"UpdaterPort",  "Paths":["K:\\plots"] )
 ```
-3. 挖矿地址一定要与plotid对应；
+3. The address and plot id should be related (which means the plot id should be exactly produced from the mining address).
 
-保存，将其放入 lava-miner.exe 相同的目录下，双击 lava-miner.exe 开启挖矿。
+Save, and make sure the config file is under the same path with lava-miner.exe. Double-click lava-miner.exe to start mining!
 
