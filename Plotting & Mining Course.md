@@ -6,13 +6,13 @@
 
 #### 步骤一：下载P盘软件
 
->我们推荐下载免费P盘软件TurboPlotter的最新版本，下载地址：[https://blackpawn.com/tp/](https://blackpawn.com/tp/)
+我们推荐下载免费P盘软件TurboPlotter的最新版本，下载地址：[https://blackpawn.com/tp/](https://blackpawn.com/tp/)
 
->该软件的免费版仅支持同时P一块盘；
+该软件的免费版仅支持同时P一块盘；
 
->付费版本（PRO版本以及UNLIMITED版本）则可以支持同时P更多盘，具体性能请参考blackpawn官网说明（以下为截图，仅供参考）。
+付费版本（PRO版本以及UNLIMITED版本）则可以支持同时P更多盘，具体性能请参考blackpawn官网说明（以下为截图，仅供参考）。
 
->用户请根据个人需求选择并下载。
+用户请根据个人需求选择并下载。
 
 ![img1.png](https://github.com/lavafy/testnet/blob/master/imgs/img1.png)
 
@@ -31,7 +31,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 
 ![img2.png](https://github.com/lavafy/testnet/blob/master/imgs/img2.png)
 
->在进行P盘前，软件会要求用户填写“address”或“account ID”，此处实际是指您的==Plot ID==。请正确填写您准备好的Lava Plot ID；如果没有准备，请跳转后一步骤准备Plot ID。
+>在进行P盘前，软件会要求用户填写“address”或“account ID”，此处实际是指您的<font color=#0099ff size=12 face="黑体">Plot ID</font>。请正确填写您准备好的Lava Plot ID；如果没有准备，请跳转后一步骤准备Plot ID。
 
 ![img3.png](https://github.com/lavafy/testnet/blob/master/imgs/img3.png)
 
@@ -49,7 +49,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 ```
 ![img4.png](https://github.com/lavafy/testnet/blob/master/imgs/img4.png)
 
->Lava-cli 会返回 ==address== 和 ==plot id== 两个数据。Address就是用于挖矿并接受出块奖励的地址，Plot ID为对应此地址的Plot ID。
+>Lava-cli 会返回 `address`和 `plot id`两个数据。Address就是用于挖矿并接受出块奖励的地址，Plot ID为对应此地址的Plot ID。
 
 
 #### 步骤四、P盘参数设定
@@ -69,7 +69,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 ##### Target disk path选项: 
 >对于非SSD的情况，请在此填写P盘的目标路径（即存放Plot文件的位置）。对于免费版，软件仅支持单个路径。
 
->==Start nonce==选项：默认从0开始，如无特殊要求可直接选择自动模式（automatic）。Choose from file 表示继续P上次暂停的文件。
+>`Start nonce`选项：默认从0开始，如无特殊要求可直接选择自动模式（automatic）。Choose from file 表示继续P上次暂停的文件。
 
 ![img6.png](https://github.com/lavafy/testnet/blob/master/imgs/img6.png)
 
