@@ -69,8 +69,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 ##### Target disk path选项: 
 >对于非SSD的情况，请在此填写P盘的目标路径（即存放Plot文件的位置）。对于免费版，软件仅支持单个路径。
 
-##### Start nonce选项：
->默认从0开始，如无特殊要求可直接选择自动模式（automatic）。Choose from file 表示继续P上次暂停的文件。
+>==Start nonce==选项：默认从0开始，如无特殊要求可直接选择自动模式（automatic）。Choose from file 表示继续P上次暂停的文件。
 
 ![img6.png](https://github.com/lavafy/testnet/blob/master/imgs/img6.png)
 
