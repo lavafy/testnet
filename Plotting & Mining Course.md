@@ -14,7 +14,7 @@
 
 >用户请根据个人需求选择并下载。
 
-![img1.png](http://note.youdao.com/yws/res/6498/WEBRESOURCE13867e9d5240587b4180939de9875512)
+![img1.png](https://github.com/lavafy/testnet/blob/master/imgs/img1.png)
 
 
 ##### *下载链接参考*：
