@@ -31,7 +31,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 
 ![img2.png](https://github.com/lavafy/testnet/blob/master/imgs/img2.png)
 
-在进行P盘前，软件会要求用户填写“address”或“account ID”，此处实际是指您的<font color=#0099ff size=12 face="黑体">Plot ID</font>。请正确填写您准备好的Lava Plot ID；如果没有准备，请跳转后一步骤准备Plot ID。
+在进行P盘前，软件会要求用户填写“address”或“account ID”，此处实际是指您的`Plot ID`。请正确填写您准备好的Lava Plot ID；如果没有准备，请跳转后一步骤准备Plot ID。
 
 ![img3.png](https://github.com/lavafy/testnet/blob/master/imgs/img3.png)
 
