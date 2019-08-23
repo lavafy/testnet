@@ -36,7 +36,7 @@ Please go to Lava official website ([www.lavatech.org](www.lavatech.org)) -> Dow
 
 Run lava-cli.exe in Powershell (please ganrantee that lavad.exe server is updated to the latest blocks), and type in command:
 ```
-.\lava-cli.exe –testnet=1 -rpcuser=test -rpcpasword=test -getmineraddress
+.\lava-cli.exe –testnet=1 -rpcuser=test -rpcpassword=test -getmineraddress
 ```
 ![img4.png](https://github.com/lavafy/testnet/blob/master/imgs/img4.png)
 
