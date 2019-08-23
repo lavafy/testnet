@@ -45,7 +45,7 @@ UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan
 
 运行全节点钱包（请先确认lavad成功同步到区块链），输入命令: 
 ```
-.\lava-cli.exe –testnet=1 -rpcuser=test -rpcpassword=test -getmineraddress
+.\lava-cli.exe –testnet=1 -rpcuser=test -rpcpassword=test getmineraddress
 ```
 ![img4.png](https://github.com/lavafy/testnet/blob/master/imgs/img4.png)
 
