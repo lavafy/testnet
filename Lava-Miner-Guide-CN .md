@@ -1,4 +1,4 @@
-###Lava挖矿教程（Lava Miner使用教程）
+### Lava挖矿教程（Lava Miner使用教程）
 
 # 步骤一：下载Lava Miner
 
@@ -79,7 +79,7 @@ d.挖矿地址要与Plot ID相对应。
 
 # 步骤三：开始挖矿
 
-配置完成后，保存，并将该文件放在 lava-miner.exe 相同的目录下，然后启动lavad,并等待钱包成功同步：
+配置完成后，保存，并将该文件放在 lava-miner.exe 相同的目录下，然后启动lavad，并等待钱包成功同步：
 
 ![abc3.png](https://github.com/lavafy/testnet/blob/master/imgs/abc3.png)
 
