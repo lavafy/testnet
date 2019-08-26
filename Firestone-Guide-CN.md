@@ -77,7 +77,7 @@ Lava区块链根据固定块高划分周期，称为火石周期`Slot`。
 
 1.向系统抵押LV获得火石（即购买火石）：
 ```
-.\lava-cli.exe -testnet=1 -rpcuser=test -rpcpassword=test buyfirestone "购买火石的地址"
+.\lava-cli.exe -rpcuser=test -rpcpassword=test buyfirestone "购买火石的地址"
 ```
 成功执行返回交易ID。
 
@@ -89,7 +89,7 @@ Lava区块链根据固定块高划分周期，称为火石周期`Slot`。
 
 2.查询当前周期（Slot）信息：
 ```
-.\lava-cli.exe -testnet=1 -rpcuser=test -rpcpassword=test getslotinfo
+.\lava-cli.exe -rpcuser=test -rpcpassword=test getslotinfo
 ```
 返回结果如下：
 ```
@@ -114,7 +114,7 @@ Lava区块链根据固定块高划分周期，称为火石周期`Slot`。
 
 3.查询地址持有火石情况：
 ```
-.\lava-cli.exe -testnet=1 -rpcuser=test -rpcpassword=test getfirestone “你要查询的地址”
+.\lava-cli.exe -rpcuser=test -rpcpassword=test getfirestone “你要查询的地址”
 ```
 返回结果如下：
 ```
@@ -146,7 +146,7 @@ Lava区块链根据固定块高划分周期，称为火石周期`Slot`。
 
 如果火石在出块的时候消耗掉了，就不需要手动释放；如果没有被消耗掉，需要在过期后手动释放。
 ```
-.\lava-cli.exe -testnet=1 -rpcuser=test -rpcpassword=test freefirestone "持有火石的地址" "接受释放资金的地址"
+.\lava-cli.exe -rpcuser=test -rpcpassword=test freefirestone "持有火石的地址" "接受释放资金的地址"
 ```
 成功释放后返回交易ID。
 
