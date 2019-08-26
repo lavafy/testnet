@@ -16,9 +16,9 @@
 
 Alice可发起一笔绑定交易，将自身算力绑定到Bob身上。
 
-挖矿时，如果Alice出块，该块会记录Alice的Plot ID（即认为是Alice出块），但Coinbase交易的收益地址是Bob的地址（Address B）；
+挖矿时，如果Alice出块，该块会记录Alice的`Plot ID`（即认为是Alice出块），但`Coinbase`交易的收益地址是Bob的地址（Address B）；
 
-如果Bob出块，该块会记录Bob的Plot ID（即认为是Bob出块），且Coinbase交易的收益地址仍是Bob的地址（Address B）。
+如果Bob出块，该块会记录Bob的`Plot ID`（即认为是Bob出块），且`Coinbase`交易的收益地址仍是Bob的地址（Address B）。
 
 <br />
 
@@ -51,7 +51,7 @@ Alice可发起一笔绑定交易，将自身算力绑定到Bob身上。
 ```
 例如矿工甲（持有挖矿地址A）可以发起算力绑定到矿工乙（持有挖矿地址B）。绑定后，甲、乙都可正常挖矿。
 
-当甲的Plot ID出块时，对应的Coinbase奖励会发到乙的地址B。
+当甲的`Plot ID`出块时，对应的`Coinbase`奖励会发到乙的地址B。
 
 绑定成功后，程序会返回绑定交易的ID。
 
@@ -77,7 +77,7 @@ Alice可发起一笔绑定交易，将自身算力绑定到Bob身上。
     }
 ]
 ```
-from项表示发起绑定人的信息（包括地址与Plot ID）、to项表示接受绑定人的信息（Plot ID）。
+from项表示发起绑定人的信息（包括地址与`Plot ID`）、to项表示接受绑定人的信息（`Plot ID`）。
 
 <br />
 
