@@ -2,7 +2,7 @@
 
 ### Basics
 
->Plotting stands for the process where Plot files are produced and filled into disks. Plot files are fundamental data arrays that are stored in disks statically and fetched during the PoC mining. The more storage capacity you possess, the more Plot files you can fill into the disk, and finally the more chance to produce a block. It is necessary to prepare Plot files before you start mining Lava!
+>`Plotting` stands for the process where `Plot files` are produced and filled into disks. `Plot files` are fundamental data arrays that are stored in disks statically and fetched during the PoC mining. The more storage capacity you possess, the more `Plot files` you can fill into the disk, and finally the more chance to produce a block. It is necessary to prepare `Plot files` before you start mining Lava!
 
 #### Step 1：Download Plotting Softwares
 
@@ -18,11 +18,11 @@ Please download the software accroding to mines's demand.
 
 #### Step 2: Pre-settings
 
-The enter page will ask if you already have existing Plot files; For new user, please click "No".
+The enter page will ask if you already have existing `Plot files`; For new user, please click "No".
 
 ![img2.png](https://github.com/lavafy/testnet/blob/master/imgs/img2.png)
 
-In the next page, you will be required to enter "address" or "Account ID", which is actually your Lava Plot ID. If you don't have one, please go to the next step.
+In the next page, you will be required to enter "address" or "Account ID", which is actually your Lava `Plot ID`. If you don't have one, please go to the next step.
 
 ![img3.png](https://github.com/lavafy/testnet/blob/master/imgs/img3.png)
 
@@ -30,11 +30,11 @@ In the next page, you will be required to enter "address" or "Account ID", which
 
 #### Step 3: Get a new Lava Plot ID
 
-You can get a new Lava Plot ID on your own in Lava Core (Lava full node wallet)
+You can get a new Lava `Plot ID` on your own in `Lava Core` (Lava full node wallet)
 
 Please go to Lava official website ([www.lavatech.org](www.lavatech.org)) -> Download-> Full Node Wallet and choose your platform version.
 
-Run lava-cli.exe in Powershell (please ganrantee that lavad.exe server is updated to the latest blocks), and type in command:
+Run lava-cli.exe in `Powershell` (please ganrantee that lavad.exe server is updated to the latest blocks), and type in command:
 ```
 .\lava-cli.exe –testnet=1 -rpcuser=test -rpcpassword=test getmineraddress
 ```
@@ -90,13 +90,13 @@ Please set the configuration file `miner.conf` before mining.
 ```
 { "Mode" :  "pool",
 "Server" : your full node server, if local: "127.0.0.1"
-"Port": 18332, 
+"Port": 18332, (8332 for mainnet, 18332 for testnet) 
 "OwnerAddr" : your mining address ，
 "HttpAccount" : "test",
 "HttpPassWord" : "test",
 "AccountKey" : "sss",
 "UpdaterAddr" : your full node server, if local: "127.0.0.1"
-"UpdaterPort": “18332”, 
+"UpdaterPort": “8332”,(8332 for mainnet, 18332 for testnet) 
 "InfoAddr" : "100pb.online",
 "InfoPort": "8124", 
 "EnableProxy": false, 
@@ -118,13 +118,13 @@ Please set the configuration file `miner.conf` before mining.
 ```
 
 ##### Notice:
-1. the RPC port for Lava Testnet is: 18332;
+1. the `RPC port` for Lava Mainnet: 8332; for Lava Testnet: 18332;
 2. Necessary fields in the configuration file：
 
 ```
 ("Server" ,"Port","OwnerAddr" ,"HttpAccount" ,"HttpPassWord" ,"UpdaterAddr" ,"UpdaterPort",  "Paths":["K:\\plots"] )
 ```
-3. The address and plot id should be related (which means the plot id should be exactly produced from the mining address).
+3. The `address` and `plot id` should be related (which means the `plot id` should be exactly produced from the `mining address`).
 
 Save, and make sure the config file is under the same path with lava-miner.exe. Double-click lava-miner.exe to start mining!
 
