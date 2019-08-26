@@ -1,0 +1,46 @@
+# 步骤一：
+首先下载挖矿软件（Lava Miner），可前往Lava官网（www.lavatech.org）顶部的下载栏目->Miner进行最新版本的下载。
+![图片1.png]（https://github.com/lavafy/testnet/blob/master/imgs/%E5%9B%BE%E7%89%871.png）
+
+# 步骤二：
+完成下载后，首先需要配置好miner.conf 文件：
+![图片2.png]（https://github.com/lavafy/testnet/blob/master/imgs/%E5%9B%BE%E7%89%872.png）
+
+按照如下配置设置：
+ { "Mode" :  "pool",
+"Server" : 目标服务器地址，如"192.168.3.86", 钱包节点在哪，就输入哪
+"Port": 8332, 
+"OwnerAddr" : 矿 工 lava 地 址 ，
+"HttpAccount" : "test",
+"HttpPassWord" : "test",
+"AccountKey" : "sss",
+"UpdaterAddr" : 目标服务器地址，如"192.168.3.86", 钱包节点在哪，就输入哪
+"UpdaterPort": “8332”, 
+"InfoAddr" : "100pb.online",
+"InfoPort": "8124", 
+"EnableProxy": false, 
+"ProxyPort": 8126, 
+"Paths": P 盘的盘符数组，形如：["E:\\","C:\\"], 
+"CacheSize" : 16384, 
+"CacheSize2" : 262144, 
+"Debug": true, 
+"UseHDDWakeUp": true, 
+"TargetDeadline": 80000000, 
+"SendInterval": 100, 
+"UpdateInterval": 950, 
+"UseLog" : true, 
+"ShowWinner" : false, 
+"UseBoost" : false, 
+"MinerName": "sun", （单台矿机的识别名字） 
+"WinSizeX": 76, 
+"WinSizeY": 60 }
+a.主网rpc端口为8332
+b. 挖矿启动一定要加rpcuser与rpcpassword
+c. 挖矿配置文件需要配置("Server" ,"Port","OwnerAddr" ,"HttpAccount" ,"HttpPassWord" ,"UpdaterAddr" ,"UpdaterPort",  "Paths":["K:\\plots"] )
+d.挖矿地址要与plotid对应
+
+#步骤三：
+配置好后保存，将其放入 lava-miner.exe 相同的目录下，然后启动lavad,使钱包成功同步：
+![图片3.png]（https://github.com/lavafy/testnet/blob/master/imgs/%E5%9B%BE%E7%89%873.png）
+钱包成功同步后，双击 lava-miner.exe 就可以开启挖矿了：
+![图片4.png]（https://github.com/lavafy/testnet/blob/master/imgs/%E5%9B%BE%E7%89%873.png）
