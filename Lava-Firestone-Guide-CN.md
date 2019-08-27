@@ -77,13 +77,17 @@ Lava区块链根据固定块高划分周期，称为火石周期`Slot`。
 
 1.向系统抵押LV获得火石（即购买火石）：
 ```
-.\lava-cli.exe -rpcuser=test -rpcpassword=test buyfirestone "购买火石的地址"
+.\lava-cli.exe -rpcuser=test -rpcpassword=test buyfirestone "购买火石的地址" "指定找零地址"
 ```
 成功执行返回交易ID。
 
 需要注意，火石是关联到地址的。例如，您通过该命令给地址A购买了火石，未来只有地址A的私钥能够使用火石以及释放火石。
 
 一般情况下，给挖矿地址购买火石即可，这样当您的挖矿地址出块时，火石也会被自动使用以获得双倍Coinbase收益。
+
+此外，buyfirestone命令目仅支持向`P2PKH地址`（Pay2PubkeyHash地址，主网1开头地址）购买火石，不支持向`P2SH地址`（隔离见证地址，主网3开头地址）购买火石。
+
+找零地址是指购买火石交易引用了可用的TX Input余额后，向用户返回多余资金时接受找零资金的地址。
 
 <br />
 
