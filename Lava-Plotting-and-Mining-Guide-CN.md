@@ -98,13 +98,13 @@ P盘中途如想暂停P盘，可点击pause（暂停）按钮 `（警告：P盘�
 
 ```
 { "Mode" :  "pool",
-"Server" : 目标服务器地址，如"127.0.0.1", 钱包节点在哪，就输入哪
+"Server" : 目标服务器地址，如"192.168.3.86", 即钱包节点所在的地址；如果lavad和Miner都在本机上跑，就填写“127.0.0.1”。
 "Port": 主网是8332，测试网是18332, 
 "OwnerAddr" : 矿 工 lava 地 址 ,
 "HttpAccount" : "test",请保持与您lavad中设置的rpcuser一致！
 "HttpPassWord" : "test",请保持与您lavad中设置的rpcpassword一致！
 "AccountKey" : "sss",
-"UpdaterAddr" : 目标服务器地址，如"127.0.0.1", 钱包节点在哪，就输入哪
+"UpdaterAddr" : 目标服务器地址，如"192.168.3.86", 即钱包节点所在的地址；如果lavad和Miner都在本机上跑，就填写“127.0.0.1”。
 "UpdaterPort": 主网“8332”,测试网“18332”,
 "InfoAddr" : "100pb.online",
 "InfoPort": "8124", 
