@@ -22,9 +22,9 @@
 
 "OwnerAddr" : 即矿工的挖矿地址,
 
-"HttpAccount" : "test",
+"HttpAccount" : "test",请保持与您lavad中设置的rpcuser一致！
 
-"HttpPassWord" : "test",
+"HttpPassWord" : "test",请保持与您lavad中设置的rpcpassword一致！
 
 "AccountKey" : "sss",
 
