@@ -3,31 +3,31 @@
 
 # STEP 1: Download Lava Full Node Wallet
 
-Please go to Lava official website->Top Bar->Downlaod to get latest releases.
+Please go to Lava official website(lavatech.org)->Top Bar->Downlaod to get latest releases.
 
 ![abc6.png](https://github.com/lavafy/testnet/blob/master/imgs/abc6.png)
 
 # STEP 2: Unarchive
 
-Unarchive, and you get lavad.exe and lava-cli.exe
+Unarchive to get lavad.exe and lava-cli.exe
 
 # STEP 3: Run lavad.exe and sync the blockchain data.
 
-Keep press SHIFT and right-click, choose Powershell and click to start.
+Long press SHIFT key and right-click, choose Powershell from right-click menu and click to start a Powershell interface.
 
 ![abc7.png](https://github.com/lavafy/testnet/blob/master/imgs/abc7.png)
 
-a. Type in the Powershell interface: `.\lavad -rpcuser=test -rpcpassword=test`, press ENTER to run the program.
+a. Type: `.\lavad -rpcuser=test -rpcpassword=test`, press ENTER to run the instruction.
 
 ![abc22.png](https://github.com/lavafy/testnet/blob/master/imgs/abc22.png)
 
-Please wait up to several minutes to let the Full Node update the blockchain data and make sure it has already updated to the latest height from the blockchain.
-You can get the current height from blockchain explorer (https://explorer.lavatech.org).
+Please wait up to several minutes to let the Full Node sync the blockchain data from the network and make sure it has already updated to the latest height from the blockchain.
+You can get the current height and more info from our blockchain explorer (https://explorer.lavatech.org).
 
-# STEP 4: Use client (lava-cli) to operate your full node wallet.
+# STEP 4: Operate your full node wallet in the client(lava-cli).
 
-b. Open a new Powershell interface (always keep the lavad running) and type:`.\lava-cli -rpcuser=test -rpcpassword=test getblockchaininfo`
-which returns an overview of the current blockchain data.
+b. Open a new Powershell interface (Notice: always keep the lavad interface running) and type:`.\lava-cli -rpcuser=test -rpcpassword=test getblockchaininfo`
+which returns an overview of the current blockchain status.
 
 ![abc9.png](https://github.com/lavafy/testnet/blob/master/imgs/abc9.png)
 
