@@ -2,7 +2,7 @@
 
 # STEP 1: Download Lava Miner
 
-Please go to Lava official site(lavatech.org)->Top Bar->Download to get the latest release of Lava Miner.
+Please go to Lava official site(lavatech.org)->Top Bar->Download to get the latest release of `Lava Miner`.
 
 ![abc1.png](https://github.com/lavafy/testnet/blob/master/imgs/abc1.png)
 
@@ -79,11 +79,11 @@ d.Mining address and Plot ID should be relevant.
 
 # STEP 3: Start Mining
 
-Save the config file and make sure that the file is under the same path with your 'lava-miner.exe'.
-Run 'lavad.exe' (which is your full node that supports your mining progress) and make sure your full node syncs to the latest height.
-This is of great significance, because you will be mining in vain if your full node not in sync with the blockchain.
+Save the config file and make sure that the file is under the same path with your `lava-miner.exe`.
+Run `lavad.exe` (which is your full node that supports your mining progress) and make sure your full node syncs to the latest height.
+PLEASE PAY EXTRA ATTENTION TO THE SYNC STATUS, because you will be mining IN VAIN if your full node NOT in sync with the blockchain.
 
 ![abc3.png](https://github.com/lavafy/testnet/blob/master/imgs/abc3.png)
 
-After sync, double click 'lava-miner.exe' to start mining!
+After sync, double click `lava-miner.exe` to start mining!
 ![abc5.png](https://github.com/lavafy/testnet/blob/master/imgs/abc5.png)
