@@ -17,7 +17,7 @@ Long press SHIFT key and right-click, choose Powershell from right-click menu an
 
 ![abc7.png](https://github.com/lavafy/testnet/blob/master/imgs/abc7.png)
 
-a. Type: `.\lavad -rpcuser=test -rpcpassword=test`, press ENTER to run the instruction.
+a. Type: ```.\lavad -rpcuser=test -rpcpassword=test```, press ENTER to run the instruction.
 
 ![abc22.png](https://github.com/lavafy/testnet/blob/master/imgs/abc22.png)
 
