@@ -74,7 +74,7 @@ a.Mainnet port:8332; Testnet port:18332
 
 b.Must have:("Server" ,"Port","OwnerAddr" ,"HttpAccount" ,"HttpPassWord" ,"UpdaterAddr" ,"UpdaterPort",  "Paths")
 
-d.Mining address and Plot ID should be relevant.
+c.Mining `address` and `Plot ID` should be RELEVANT (they should be created from a sole `getmineraddress` instruction).
 
 
 # STEP 3: Start Mining
