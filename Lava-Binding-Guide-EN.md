@@ -8,7 +8,7 @@
 
 ### 1.What is "Binding"?
 
-`Binding` is a special on-chain agreement between two miners. It is a unique mechanism as an innovation from `Lava`.
+`Binding` is a **special on-chain agreement between two miners**. It is a unique mechanism as an innovation from `Lava`.
 
 `Binding` is an agreement (more exactly, a contract) that helps a miner authorize to entrust his mining capacity (and following block rewards) to another miner's `address`, as if the two miners are mining as a whole.
 
@@ -33,15 +33,15 @@ Some miners would like to bind his capacity to someone else, because this agreem
 
 Just imagine a miner with very limited capacity (like Alice). 
 
-Think about that if this "small" miner binds him/herself to a "big" miner (just like Bob), his/her mining yield will be significantly "smoothed" and "flattened".
+Think about that if this "small" miner binds him/herself to a "big" miner (just like Bob), his/her mining yield will be significantly **"smoothed" and "flattened"**.
 
 <br />
 
 ### 3. Yield distribution between miners:
 
-It should be hightlighted that even though binding actions are proceeded on-chain (which means they are totally decentralized), the mining yield can be distributed between the two miners in a very subjective and customized way.
+It should be hightlighted that even though binding actions are proceeded **on-chain** (which means they are **totally decentralized**), the mining yield can be distributed between the two miners **in a very subjective and customized way**.
 
-Think about the Alice and Bob case we just talked above. One reasonable solution is that Alice gets 1/300 of the total yields from Bob's address on a weekly basis, what ever how many blocks mined by Alice and how many by Bob during the period.
+Think about the Alice and Bob case we just talked above. One reasonable solution is that Alice gets 1/300 of the total yields from Bob's address on a weekly basis, whatever how many blocks mined by Alice and how many by Bob during the period.
 
 Actually, any distribution scheme is feasible as long as the two parties are cool with it.
 
@@ -89,7 +89,7 @@ The list looks like:
 ```
 .\lava-cli.exe -rpcuser=test -rpcpassword=test unbindplotid "one's address"
 ```
-Notice that every address is allowed to bind to only one miner address at a time. So if a miner would like to disable his existing binding, or change a binding target, he/she should in the first place unbind the former one.
+Notice that every address is allowed to bind to **only one miner address at a time**. So if a miner would like to disable his existing binding, or change a binding target, he/she should in the first place unbind the former one.
 
 When executed, a `TxID` for the unbinding transaction will be returned. After the transaction is recorded on-chain, the binding relationship is formally (technically) removed or disabled.
 
