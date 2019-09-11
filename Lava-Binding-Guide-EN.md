@@ -8,9 +8,9 @@
 
 1.What is "Binding"?
 
-'Binding' is a special on-chain agreement between two miners. It is a unique mechanism as an innovation from Lava.
+`Binding` is a special on-chain agreement between two miners. It is a unique mechanism as an innovation from `Lava`.
 
-'Binding' is an agreement (more exactly, a contract) that helps a miner authorize to entrust his mining capacity (and following block rewards) to another miner's address, as if the two miners are mining as a whole.
+`Binding` is an agreement (more exactly, a contract) that helps a miner authorize to entrust his mining capacity (and following block rewards) to another miner's `address`, as if the two miners are mining as a whole.
 
 A simple illustration:
 
@@ -56,7 +56,7 @@ Actually, any distribution scheme is feasible as long as the two parties are coo
 ```
 .\lava-cli.exe -rpcuser=test -rpcpassword=test bindplotid "fromaddress" "targetaddress"
 ```
-When executed, the TxID for the binding transaction will be returned.
+When executed, the `TxID` for the binding transaction will be returned.
 
 In the Alice and Bob case, `fromaddress` should be Alice's address (Addr_A), and `targetaddress` should be Bob's address (Addr_B).
 
@@ -91,7 +91,7 @@ The list looks like:
 ```
 Notice that every address is allowed to bind to only one miner address at a time. So if a miner would like to disable his existing binding, or change a binding target, he/she should in the first place unbind the former one.
 
-When executed, a TxID for the unbinding transaction will be returned. After the transaction is recorded on-chain, the binding relationship is formally (technically) removed or disabled.
+When executed, a `TxID` for the unbinding transaction will be returned. After the transaction is recorded on-chain, the binding relationship is formally (technically) removed or disabled.
 
 
 
