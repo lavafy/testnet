@@ -6,28 +6,28 @@
 
 <br />
 
-1.What is "Binding"?
+#1.What is "Binding"?
 
 `Binding` is a special on-chain agreement between two miners. It is a unique mechanism as an innovation from `Lava`.
 
 `Binding` is an agreement (more exactly, a contract) that helps a miner authorize to entrust his mining capacity (and following block rewards) to another miner's `address`, as if the two miners are mining as a whole.
 
-A simple illustration:
+*A simple illustration:*
 
-Given that Alice has a mining address (Addr_A) and 1TB disk capacity available for mining, Bob has a mining address (Addr_B) and 300TB disk capacity available for mining.
+*Given that Alice has a mining address (Addr_A) and 1TB disk capacity available for mining, Bob has a mining address (Addr_B) and 300TB disk capacity available for mining.*
 
-Now, Alice submits a binding request (via a special transaction on-chain) to the network. This request turns to be valid as soon as the transaction is recorded on the blochchain.
+*Now, Alice submits a binding request (via a special transaction on-chain) to the network. This request turns to be valid as soon as the transaction is recorded on the blochchain.*
 
-When mining, Both Alice and Bob provides their own Plot files and participated in the mining process, just acts like a normal miner.
+*When mining, Both Alice and Bob provides their own Plot files and participated in the mining process, just acts like a normal miner.
 
-a) If Alice happens to mine a block, the block will be entitled with Alice's Plot ID, but the following mining reward goes to Bob's address (Addr_B);
+*a) If Alice happens to mine a block, the block will be entitled with Alice's Plot ID, but the following mining reward goes to Bob's address (Addr_B);
 
-b) IF Bob happens to mine a block, the block will be entitled with Bob's Plot ID, and the following mining rewards goes to Bob's address (Addr_B).
+*b) IF Bob happens to mine a block, the block will be entitled with Bob's Plot ID, and the following mining rewards goes to Bob's address (Addr_B).
 
 
 <br />
 
-2. What does it mean to a Lava miner?
+#2. What does it mean to a Lava miner?
 
 Some miners would like to bind his capacity to someone else, because this agreement could provide some positive results.
 
@@ -37,7 +37,7 @@ Think about that if this "small" miner binds him/herself to a "big" miner (just 
 
 <br />
 
-3. Yield distribution between miners:
+#3. Yield distribution between miners:
 
 It should be hightlighted that even though binding actions are proceeded on-chain (which means they are totally decentralized), the mining yield can be distributed between the two miners in a very subjective and customized way.
 
@@ -52,7 +52,7 @@ Actually, any distribution scheme is feasible as long as the two parties are coo
 
 <br />
 
-1. Submit a binding request:
+#1. Submit a binding request:
 ```
 .\lava-cli.exe -rpcuser=test -rpcpassword=test bindplotid "fromaddress" "targetaddress"
 ```
@@ -62,7 +62,7 @@ In the Alice and Bob case, `fromaddress` should be Alice's address (Addr_A), and
 
 <br />
 
-2.Inquery for existing binding relationship on-chain:
+#2.Inquery for existing binding relationship on-chain:
 ```
 .\lava-cli.exe -rpcuser=test -rpcpassword=test listbindings 
 ```
@@ -85,7 +85,7 @@ The list looks like:
 
 <br />
 
-3. Remove or disable an one's existing binding relationship:
+#3. Remove or disable an one's existing binding relationship:
 ```
 .\lava-cli.exe -rpcuser=test -rpcpassword=test unbindplotid "one's address"
 ```
