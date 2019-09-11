@@ -2,11 +2,11 @@
 
 <br />
 
-### Basic Concepts:
+## Basic Concepts:
 
 <br />
 
-## 1.What is "Binding"?
+### 1.What is "Binding"?
 
 `Binding` is a special on-chain agreement between two miners. It is a unique mechanism as an innovation from `Lava`.
 
@@ -27,7 +27,7 @@
 
 <br />
 
-## 2. What does it mean to a Lava miner?
+### 2. What does it mean to a Lava miner?
 
 Some miners would like to bind his capacity to someone else, because this agreement could provide some positive results.
 
@@ -37,7 +37,7 @@ Think about that if this "small" miner binds him/herself to a "big" miner (just 
 
 <br />
 
-## 3. Yield distribution between miners:
+### 3. Yield distribution between miners:
 
 It should be hightlighted that even though binding actions are proceeded on-chain (which means they are totally decentralized), the mining yield can be distributed between the two miners in a very subjective and customized way.
 
@@ -48,11 +48,11 @@ Actually, any distribution scheme is feasible as long as the two parties are coo
 <br />
 
 
-### Instructions:
+## Instructions:
 
 <br />
 
-## 1. Submit a binding request:
+### 1. Submit a binding request:
 ```
 .\lava-cli.exe -rpcuser=test -rpcpassword=test bindplotid "fromaddress" "targetaddress"
 ```
@@ -62,7 +62,7 @@ In the Alice and Bob case, `fromaddress` should be Alice's address (Addr_A), and
 
 <br />
 
-## 2.Inquery for existing binding relationship on-chain:
+### 2.Inquery for existing binding relationship on-chain:
 ```
 .\lava-cli.exe -rpcuser=test -rpcpassword=test listbindings 
 ```
@@ -85,7 +85,7 @@ The list looks like:
 
 <br />
 
-## 3. Remove or disable an one's existing binding relationship:
+### 3. Remove or disable an one's existing binding relationship:
 ```
 .\lava-cli.exe -rpcuser=test -rpcpassword=test unbindplotid "one's address"
 ```
