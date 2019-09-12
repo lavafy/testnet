@@ -52,7 +52,7 @@ The `Price` is **dynamically adjusted** according to an special adjustment algor
 
 A `Slot` is a period of time, whose length is defined by `Height` on the blockchain.
 
-In this way, the Lava Blockchain is divided by every **2048 blocks**, and each divided result is called a `Slot`.
+In this way, the Lava Blockchain is divided by every `2048` blocks, and each divided result is called a `Slot`.
 
 For example, blocks from #0~#2047 constitute `Slot #0`, blocks from #2048~#4095 constitute `Slot #1`, and so on.
 
@@ -105,7 +105,7 @@ Important Tips:
 
 2) In normal situations, `FirestoneAddress` should be your mining address. In this way, your Full Node will automatically consume a Firestone if a new block is mined and benefit this mining address with additional reward.
 
-3) a `P2SH Address` CANNOT be the `FirestoneAddress` when buying a Firestone.
+3) a `P2SH` format address CANNOT be the `FirestoneAddress` when buying a Firestone.
 
 4)`ReceiveChangeAddress` is the address that will receive the change fund from the transaction.
 
