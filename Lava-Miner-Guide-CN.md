@@ -32,7 +32,7 @@
 
 "UpdaterPort": “8332”, （主网为8332、测试网为18332）
 
-"InfoAddr" : "100pb.online",
+"InfoAddr" : "127.0.0.1",不填写则默认本机。
 
 "InfoPort": "8124", 
 
