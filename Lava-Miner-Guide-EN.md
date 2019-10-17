@@ -32,7 +32,7 @@ Configurations should be set like below：
 
 "UpdaterPort": “8332”,  (Mainnet:8332; Testnet:18332)
 
-"InfoAddr" : "100pb.online",
+"InfoAddr" : "127.0.0.1", default set to local if not specified.
 
 "InfoPort": "8124", 
 
